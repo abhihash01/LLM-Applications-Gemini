@@ -6,14 +6,6 @@ import google.generativeai as genai
 
 from PIL import Image
 
-import os
-from dotenv import load_dotenv
-load_dotenv()
-import streamlit as st 
-import google.generativeai as genai
-
-from PIL import Image
-
 genai.configure(api_key = os.getenv('GOOGLE_API_KEY'))
 
 model = genai.GenerativeModel("gemini-pro-vision")
